@@ -1,0 +1,372 @@
+@charset "UTF-8";
+div.slide {
+  width: 177.7777777778vh;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 0px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+div.slide div.number {
+  width: 5rem;
+  height: 5rem;
+  top: 0.4rem;
+  left: -3.5355rem;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  background-color: #33aaff;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+}
+
+div.slide div.number span.section {
+  margin: 0em 0.3em -0.18em 0em;
+  font-family: "Gill Sans Nova";
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: -0.05em;
+  color: white;
+}
+
+div.slide div.number span.subsection {
+  margin: 0em 0em -0.18em 0em;
+  font-family: "Gill Sans Nova";
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: condensed;
+  letter-spacing: -0.05em;
+  color: white;
+}
+
+div.slide div.header {
+  width: 100%;
+  height: 0.8rem;
+  top: 0rem;
+  left: 0rem;
+  background-color: #33aaff;
+  position: absolute;
+  z-index: 0;
+}
+
+div.slide div.footer {
+  width: 100%;
+  height: 0.8rem;
+  bottom: 0rem;
+  left: 0rem;
+  background-color: #ffaa33;
+  position: absolute;
+  z-index: 0;
+}
+
+div.slide div.content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+}
+
+div.slide div.content div.large {
+  font-size: 120%;
+  letter-spacing: 0.1em;
+}
+
+div.slide div.content div.huge {
+  font-size: 150%;
+  letter-spacing: 0.1em;
+}
+
+div.slide div.content span.emphasis.blue {
+  color: #0077cc;
+}
+
+div.slide div.content span.emphasis.orange {
+  color: #cc7700;
+}
+
+div.slide div.content span.emphasis.pink {
+  color: #cc00cc;
+}
+
+div.slide div.content span.box {
+  margin: 0em 0.05em;
+  padding: 0.08em 0.25em;
+  border: 0.05em black solid;
+  border-radius: 0.2em;
+  text-align: center;
+  display: block;
+}
+
+div.slide div.content span.box.blue {
+  color: #0077cc;
+  background-color: #cceaff;
+  border-color: #0077cc;
+}
+
+div.slide div.content span.box.orange {
+  color: #cc7700;
+  background-color: #ffeacc;
+  border-color: #cc7700;
+}
+
+div.slide div.content span.box.pink {
+  color: #cc00cc;
+  background-color: #ffccff;
+  border-color: #cc00cc;
+}
+
+div.slide div.content span.underline {
+  margin: 0em;
+  padding: 0em 0.05em 0.08em 0.05em;
+  border-bottom: 0.05em rgba(0, 0, 0, 0.5) solid;
+  border-radius: 0.2em;
+  text-align: center;
+  display: block;
+}
+
+div.slide div.content span.pile {
+  display: inline-block;
+}
+
+div.slide div.content span.pile span.below-wrapper {
+  display: inline-table;
+}
+
+div.slide div.content span.pile span.above {
+  margin-bottom: 0.2em;
+  font-size: 50%;
+  text-align: center;
+  display: block;
+}
+
+div.slide div.content span.pile span.above.blue {
+  color: #0077cc;
+}
+
+div.slide div.content span.pile span.above.orange {
+  color: #cc7700;
+}
+
+div.slide div.content span.pile span.above.pink {
+  color: #cc00cc;
+}
+
+div.slide div.content span.pile span.below {
+  margin-top: 0.2em;
+  font-size: 60%;
+  text-align: center;
+  display: block;
+}
+
+div.slide div.content span.pile span.below.blue {
+  color: #0077cc;
+}
+
+div.slide div.content span.pile span.below.orange {
+  color: #cc7700;
+}
+
+div.slide div.content span.pile span.below.pink {
+  color: #cc00cc;
+}
+
+div.slide div.content ul.conlang {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 100%;
+  list-style-type: none;
+}
+
+div.slide div.content ul.conlang > li {
+  font-size: 100%;
+}
+
+div.slide div.content ul.conlang > li:nth-child(n+2) {
+  margin-top: 0.8rem;
+}
+
+div.slide div.content ul.conlang > li > ul {
+  margin-top: 0.4rem;
+  padding-left: 0.4rem;
+  list-style-type: none;
+}
+
+div.slide div.content ul.conlang > li > ul > li {
+  margin-left: 0.5rem;
+  font-size: 70%;
+}
+
+div.slide div.content ul.conlang > li > ul > li::before {
+  width: 0.5rem;
+  margin-left: -0.5rem;
+  font-family: "IPA P明朝";
+  font-size: 80%;
+  color: gray;
+  content: "▶";
+  display: inline-block;
+}
+
+div.slide div.content table {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 80%;
+  border-collapse: separate;
+  border-spacing: 0rem;
+  border-radius: 0.2em;
+  white-space: nowrap;
+}
+
+div.slide div.content table tr th,
+div.slide div.content table tr td {
+  margin: 0rem;
+  padding: 0.3em 0.8em;
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 0.05em #b3b3b3 solid;
+  border-right: 0.05em #b3b3b3 solid;
+}
+
+div.slide div.content table tr th {
+  background: #b3b3b3;
+}
+
+div.slide div.content table tr:first-child th,
+div.slide div.content table tr:first-child td {
+  border-top: 0.05em #b3b3b3 solid;
+}
+
+div.slide div.content table tr th:first-child,
+div.slide div.content table tr td:first-child {
+  border-left: 0.05em #b3b3b3 solid;
+}
+
+div.slide div.content table tr:first-child th:first-child,
+div.slide div.content table tr:first-child td:first-child {
+  border-top-left-radius: 0.2em;
+}
+
+div.slide div.content table tr:first-child th:last-child,
+div.slide div.content table tr:first-child td:last-child {
+  border-top-right-radius: 0.2em;
+}
+
+div.slide div.content table tr:last-child th:first-child,
+div.slide div.content table tr:last-child td:first-child {
+  border-bottom-left-radius: 0.2em;
+}
+
+div.slide div.content table tr:last-child th:last-child,
+div.slide div.content table tr:last-child td:last-child {
+  border-bottom-right-radius: 0.2em;
+}
+
+div.title-slide {
+  width: 177.7777777778vh;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 0px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+div.title-slide div.header {
+  width: 100%;
+  height: 0.8rem;
+  top: 0rem;
+  left: 0rem;
+  background-color: #33aaff;
+  position: absolute;
+  z-index: 0;
+}
+
+div.title-slide div.footer {
+  width: 100%;
+  height: 0.8rem;
+  bottom: 0rem;
+  left: 0rem;
+  background-color: #ffaa33;
+  position: absolute;
+  z-index: 0;
+}
+
+div.title-slide div.content {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+}
+
+div.title-slide div.content div.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.title-slide div.content div.logo-wrapper div.logo {
+  margin-right: 1rem;
+  line-height: 0;
+}
+
+div.title-slide div.content div.logo-wrapper div.logo img {
+  height: 7rem;
+}
+
+div.title-slide div.content div.title-wrapper div.number {
+  font-size: 70%;
+  color: #0077cc;
+  text-align: center;
+}
+
+div.title-slide div.content div.title-wrapper div.number span.number {
+  margin: 0em 0.2em;
+  font-family: "Gill Sans Nova";
+  font-size: 250%;
+  font-weight: bold;
+  font-stretch: condensed;
+}
+
+div.title-slide div.content div.title-wrapper div.title {
+  margin-top: 0.5rem;
+  font-size: 120%;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+html {
+  font-size: 7.2vh;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", "IPA P明朝";
+  font-feature-settings: "palt" 1, "pkna" 1;
+  line-height: 1;
+  background-color: black;
+  overflow: hidden;
+}
+
+* span.sans {
+  font-family: "Arial" !important;
+  font-size: 96% !important;
+  line-height: 96% !important;
+}
+
+* span.japanese {
+  font-family: "IPA明朝" !important;
+  font-feature-settings: "palt" 0;
+}
