@@ -215,7 +215,7 @@ div.slide div.content ul.conlang > li > ul > li::before {
   display: inline-block;
 }
 
-div.slide div.content table {
+div.slide div.content table.border {
   margin: 0rem;
   padding: 0rem;
   font-size: 80%;
@@ -225,8 +225,8 @@ div.slide div.content table {
   white-space: nowrap;
 }
 
-div.slide div.content table tr th,
-div.slide div.content table tr td {
+div.slide div.content table.border tr th,
+div.slide div.content table.border tr td {
   margin: 0rem;
   padding: 0.3em 0.8em;
   font-weight: normal;
@@ -235,38 +235,67 @@ div.slide div.content table tr td {
   border-right: 0.05em #b3b3b3 solid;
 }
 
-div.slide div.content table tr th {
+div.slide div.content table.border tr th {
   background: #b3b3b3;
 }
 
-div.slide div.content table tr:first-child th,
-div.slide div.content table tr:first-child td {
+div.slide div.content table.border tr:first-child th,
+div.slide div.content table.border tr:first-child td {
   border-top: 0.05em #b3b3b3 solid;
 }
 
-div.slide div.content table tr th:first-child,
-div.slide div.content table tr td:first-child {
+div.slide div.content table.border tr th:first-child,
+div.slide div.content table.border tr td:first-child {
   border-left: 0.05em #b3b3b3 solid;
 }
 
-div.slide div.content table tr:first-child th:first-child,
-div.slide div.content table tr:first-child td:first-child {
+div.slide div.content table.border tr:first-child th:first-child,
+div.slide div.content table.border tr:first-child td:first-child {
   border-top-left-radius: 0.2em;
 }
 
-div.slide div.content table tr:first-child th:last-child,
-div.slide div.content table tr:first-child td:last-child {
+div.slide div.content table.border tr:first-child th:last-child,
+div.slide div.content table.border tr:first-child td:last-child {
   border-top-right-radius: 0.2em;
 }
 
-div.slide div.content table tr:last-child th:first-child,
-div.slide div.content table tr:last-child td:first-child {
+div.slide div.content table.border tr:last-child th:first-child,
+div.slide div.content table.border tr:last-child td:first-child {
   border-bottom-left-radius: 0.2em;
 }
 
-div.slide div.content table tr:last-child th:last-child,
-div.slide div.content table tr:last-child td:last-child {
+div.slide div.content table.border tr:last-child th:last-child,
+div.slide div.content table.border tr:last-child td:last-child {
   border-bottom-right-radius: 0.2em;
+}
+
+div.slide div.content table tr td.left {
+  text-align: left;
+}
+
+div.slide div.content table tr td.right {
+  text-align: right;
+}
+
+div.slide div.content table tr td.center {
+  text-align: center;
+}
+
+div.slide div.content table.plain {
+  margin: 0rem;
+  padding: 0rem;
+  border-collapse: collapse;
+}
+
+div.slide div.content table.plain tr td {
+  margin: 0rem 0rem;
+  padding: 0.3em 0em 0em 0em;
+  border: none;
+  white-space: pre-wrap;
+}
+
+div.slide div.content table.plain tr:first-child td {
+  padding: 0em;
 }
 
 div.title-slide {
